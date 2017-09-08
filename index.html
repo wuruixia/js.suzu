@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Document</title>
+	
+</head>
+<body>
+    <script>
+    var arr=[22,52,68,43,19,29,31];
+        console.log(zhuanhuan(arr,'-'));
+        function zhuanhuan(arr,l){
+        	if(l==undefined){
+        		l='-';
+        	}else{
+        		l=l;
+        	}
+        	var r='';
+        	for(var i=0;i<arr.length;i++){
+               if(i<arr.length-1){
+               	r+=arr[i]+l;
+               }else{
+               	r+=arr[i];
+               }
+        	}
+        	return r;
+        }
+        // 数组里面偶数的数组元素
+        var arr=[1,5,6,9,8,5,4,2,3,5];
+        console.log(filter(arr));
+        function filter(arr){
+        	var newarr=[];
+        	for(var i=0;i<arr.length;i++){
+                if(arr[i]%2==0){
+                  newarr[newarr.length]=arr[i];
+            }
+	 
+        	}
+        	return newarr;
+        }
+</script>
+</body>
+</html>  
